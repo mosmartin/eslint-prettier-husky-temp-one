@@ -1,0 +1,41 @@
+{
+  "name": "eslint-prettier-husky-temp-one",
+  "version": "0.1.0",
+  "description": "Project setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosmartin/eslint-prettier-husky-temp-one.git"
+  },
+  "keywords": [
+    "eslint",
+    "prettier",
+    "husky"
+  ],
+  "author": "Martin Macharia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mosmartin/eslint-prettier-husky-temp-one/issues"
+  },
+  "homepage": "https://github.com/mosmartin/eslint-prettier-husky-temp-one#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --cache --fix",
+    "*.{js,ts,css,md}": "prettier --write"
+  }
+}
